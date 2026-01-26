@@ -25,7 +25,7 @@ jobs:
       - name: Build app
         run: pnpm generate
       - name: Deploy app
-        uses: ayeressian/bunnycdn-storage-deploy@v2
+        uses: ayeressian/bunnycdn-storage-deploy@v2.4.1
         with:
           upload: true
           remove: true
