@@ -35,5 +35,5 @@ jobs:
           destination: ''
           storageZoneName: '${{ secrets.STORAGE_NAME }}'
           storagePassword: '${{ secrets.STORAGE_PASSWORD }}'
-          accessKey: '${{ secrets.STORAGE_PASSWORD }}'
-          pullZoneId: '${{ secrets.STORAGE_NAME }}'
+          accessKey: '${{ secrets.API_KEY }}'
+          pullZoneId: '${{ secrets.PULL_ZONE_ID }}'
