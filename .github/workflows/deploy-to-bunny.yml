@@ -1,0 +1,39 @@
+name: Build app and deploy to Bunny storage
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Install dependencies
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+          run_install: true
+      - name: Build app
+        run: pnpm generate
+      - name: Deploy app
+        uses: ayeressian/bunnycdn-storage-deploy@v2
+        with:
+          upload: true
+          remove: true
+          purgePullZone: true
+          purgePullZoneDelay: 30
+          source: '.output/public/'
+          destination: ''
+          storageZoneName: '${{ secrets.STORAGE_NAME }}'
+          storagePassword: '${{ secrets.STORAGE_PASSWORD }}'
+          accessKey: '${{ secrets.STORAGE_PASSWORD }}'
+          pullZoneId: '${{ secrets.STORAGE_NAME }}'

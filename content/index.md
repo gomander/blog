@@ -4,7 +4,7 @@
 This site is under construction!
 ::
 
-Here I plan to upload some of my thoughts and ramblings about things I care about.
+I plan to upload some of my thoughts and ramblings about things I care about here, but I mostly created this website because I bought the `gunnar.computer` domain name and needed to put something here.
 
 [About me](/about)
 
