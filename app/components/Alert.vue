@@ -32,6 +32,7 @@
     box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     max-width: max-content;
+    margin: 1em 0;
   }
 
   .alert:hover {
