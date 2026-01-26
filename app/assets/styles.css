@@ -1,0 +1,25 @@
+@import url(https://fonts.bunny.net/css?family=besley:400,700);
+
+* { box-sizing: border-box }
+
+a {
+  color: oklch(79% 9% 240);
+  text-decoration: underline dashed;
+
+  &:visited { color: oklch(79% 9% 280) }
+}
+
+body {
+  position: relative;
+  color: oklch(97% 5% 140);
+  background-color: oklch(16% 5% 140);
+  font-family: Besley, serif;
+  font-size: 1.1rem;
+  margin: 1.5rem;
+}
+
+h1 { font-size: 1.6em }
+h2 { font-size: 1.4em }
+h3 {font-size: 1.15em }
+h4 { font-size: 1em }
+h1, h2, h3, h4, h5, h6 { margin: 1em auto }
