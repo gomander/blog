@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <main>
     <ContentRenderer
       v-if="data"
       :value="data"
     />
-  </div>
+  </main>
 </template>
 
 <script setup lang="ts">
@@ -24,7 +24,7 @@
 </script>
 
 <style scoped>
-  div {
+  main {
     max-width: 60em;
     margin: auto;
   }

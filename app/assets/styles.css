@@ -15,6 +15,7 @@ body {
   background-color: oklch(16% 5% 140);
   font-family: Besley, serif;
   font-size: 1.1rem;
+  font-display: swap;
   margin: 1.5rem;
 }
 
