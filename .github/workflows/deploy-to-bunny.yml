@@ -16,9 +16,9 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: Check out code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Install Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 24
       - name: Install dependencies
@@ -28,7 +28,7 @@ jobs:
           run_install: true
       - name: Build app
         run: pnpm generate
-      - name: Deploy app
+      - name: Deploy app to Bunny CDN
         uses: ayeressian/bunnycdn-storage-deploy@v2.4.1
         with:
           upload: true
