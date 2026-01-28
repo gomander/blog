@@ -1,3 +1,8 @@
+---
+title: 'About Gunnar'
+description: 'The greatest supervillain backstory, or something like that.'
+---
+
 # About me
 
 Last edited 2026.01.26

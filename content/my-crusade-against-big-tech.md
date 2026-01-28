@@ -1,3 +1,8 @@
+---
+title: 'My crusade against big tech'
+description: 'Gunnar goes over all the big tech products he has swapped out for more appealing alternatives.'
+---
+
 # My crusade against big tech
 
 Last edited 2026.01.26
