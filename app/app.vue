@@ -5,6 +5,4 @@
 
 <script setup lang="ts">
   import './assets/styles.css'
-
-  useHead({ htmlAttrs: { lang: 'en' } })
 </script>
