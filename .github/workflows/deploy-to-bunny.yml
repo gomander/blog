@@ -13,7 +13,7 @@ jobs:
   build-and-deploy:
     name: Build and deploy
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 3
     steps:
       - name: Check out code
         uses: actions/checkout@v6
@@ -34,7 +34,7 @@ jobs:
           upload: true
           remove: true
           purgePullZone: true
-          purgePullZoneDelay: 30
+          purgePullZoneDelay: 5
           source: '.output/public/'
           destination: ''
           storageZoneName: '${{ secrets.STORAGE_NAME }}'

@@ -1,24 +1,59 @@
-* { box-sizing: border-box }
+:root {
+  --bg-lightness: 30%;
+  --bg-chroma: 7%;
+  --bg-hue: 150;
+  --background-color: oklch(var(--bg-lightness) var(--bg-chroma) var(--bg-hue));
+  --fg-lightness: 95%;
+  --link-lightness: 80%;
+  --link-chroma: 10%;
+  --link-hue: 240;
+  --link-visited-hue: 270;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 a {
-  color: oklch(79% 9% 240);
+  color: oklch(var(--link-lightness) var(--link-chroma) var(--link-hue));
   text-decoration: underline dashed;
 
-  &:visited { color: oklch(79% 9% 280) }
+  &:visited {
+    color: oklch(var(--link-lightness) var(--link-chroma) var(--link-visited-hue));
+  }
 }
 
 body {
   position: relative;
-  color: oklch(97% 5% 140);
-  background-color: oklch(16% 5% 140);
+  color: oklch(var(--fg-lightness) var(--bg-chroma) var(--bg-hue));
+  background:
+    radial-gradient(
+      circle at top,
+      var(--background-color),
+      oklch(var(--bg-lightness) var(--bg-chroma) var(--bg-hue) / 50%) 100%
+    ),
+    linear-gradient(to bottom, var(--background-color), transparent 100%),
+    black;
   font-family: Besley, serif;
   font-size: 1.1rem;
-  font-display: swap;
-  margin: 1.5rem;
+  padding: 24px;
+  margin: 0;
+  min-height: 100dvh;
 }
 
-h1 { font-size: 1.6em }
-h2 { font-size: 1.4em }
-h3 {font-size: 1.15em }
-h4 { font-size: 1em }
-h1, h2, h3, h4, h5, h6 { margin: 1em auto }
+h1 {
+  font-size: 1.6em;
+  margin: 0 0 1em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.15em;
+}
+
+h2, h3, h4, h5, h6 {
+  margin: 1em 0;
+}
