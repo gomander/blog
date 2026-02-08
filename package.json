@@ -12,6 +12,6 @@
     "@nuxt/content": "^3.11.0",
     "@nuxt/icon": "2.2.1",
     "better-sqlite3": "^12.6.2",
-    "nuxt": "^4.3.0"
+    "nuxt": "^4.3.1"
   }
 }

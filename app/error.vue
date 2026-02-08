@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>{{ error.status ?? error.statusCode }}</h1>
-    <p>{{ error.message ?? error.statusText ?? error.statusMessage }}</p>
+    <h1>{{ error.status }}</h1>
+    <p>{{ error.message ?? error.statusText }}</p>
     <NuxtLink to="/">Go back home</NuxtLink>
   </div>
 </template>
