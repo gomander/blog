@@ -17,11 +17,12 @@ I'm a professional software engineer and a big nerd with big opinions.
 
 ## Posts
 
-[My crusade against big tech](/my-crusade-against-big-tech)
+- [The sorry state of browsers](/the-sorry-state-of-browsers)
+- [My crusade against big tech](/my-crusade-against-big-tech)
 
 ## Links
 
 - [Wheel of Names](https://wheelofnames.com)
-- [Portfolio](https://gomander.dev) (out of date)
+- [Portfolio](https://gomander.dev)
 - [GitHub](https://github.com/gomander)
 - [BlueSky](https://bsky.app/profile/gomander.dev)
