@@ -2,12 +2,13 @@
   --bg-lightness: 30%;
   --bg-chroma: 7%;
   --bg-hue: 150;
-  --background-color: oklch(var(--bg-lightness) var(--bg-chroma) var(--bg-hue));
   --fg-lightness: 95%;
   --link-lightness: 80%;
   --link-chroma: 10%;
   --link-hue: 240;
   --link-visited-hue: 270;
+  --background-color: oklch(var(--bg-lightness) var(--bg-chroma) var(--bg-hue));
+  --foreground-color: oklch(var(--fg-lightness) var(--bg-chroma) var(--bg-hue));
 }
 
 * {
@@ -25,7 +26,7 @@ a {
 
 body {
   position: relative;
-  color: oklch(var(--fg-lightness) var(--bg-chroma) var(--bg-hue));
+  color: var(--foreground-color);
   background:
     radial-gradient(
       circle at top,
@@ -36,7 +37,7 @@ body {
     black;
   font-family: Besley, serif;
   font-size: 1.1rem;
-  padding: 24px;
+  padding: 24px 24px 72px;
   margin: 0;
   min-height: 100dvh;
 }

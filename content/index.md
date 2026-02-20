@@ -17,6 +17,7 @@ I'm a professional software engineer and a big nerd with big opinions.
 
 ## Posts
 
+- [Wheel of Names leaving Discord](/wheel-of-names-leaving-discord)
 - [The sorry state of browsers](/the-sorry-state-of-browsers)
 - [My crusade against big tech](/my-crusade-against-big-tech)
 
@@ -25,4 +26,4 @@ I'm a professional software engineer and a big nerd with big opinions.
 - [Wheel of Names](https://wheelofnames.com)
 - [Portfolio](https://gomander.dev)
 - [GitHub](https://github.com/gomander)
-- [BlueSky](https://bsky.app/profile/gomander.dev)
+- [Bluesky](https://bsky.app/profile/gomander.dev)
